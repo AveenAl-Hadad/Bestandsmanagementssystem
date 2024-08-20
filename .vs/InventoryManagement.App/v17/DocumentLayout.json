@@ -1,0 +1,53 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\aveen alhadad\\source\\repos\\InventoryManagement.App\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C5EC86CD-A28D-4B99-9E32-C4A7E2CBE4C8}|InventoryManagement.App\\InventoryManagement.App.csproj|c:\\users\\aveen alhadad\\source\\repos\\inventorymanagement.app\\inventorymanagement.app\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5EC86CD-A28D-4B99-9E32-C4A7E2CBE4C8}|InventoryManagement.App\\InventoryManagement.App.csproj|solutionrelative:inventorymanagement.app\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5EC86CD-A28D-4B99-9E32-C4A7E2CBE4C8}|InventoryManagement.App\\InventoryManagement.App.csproj|c:\\users\\aveen alhadad\\source\\repos\\inventorymanagement.app\\inventorymanagement.app\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C5EC86CD-A28D-4B99-9E32-C4A7E2CBE4C8}|InventoryManagement.App\\InventoryManagement.App.csproj|solutionrelative:inventorymanagement.app\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\aveen alhadad\\source\\repos\\InventoryManagement.App\\InventoryManagement.App\\Form1.cs",
+              "RelativeDocumentMoniker": "InventoryManagement.App\\Form1.cs",
+              "ToolTip": "C:\\Users\\aveen alhadad\\source\\repos\\InventoryManagement.App\\InventoryManagement.App\\Form1.cs",
+              "RelativeToolTip": "InventoryManagement.App\\Form1.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAswCIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-20T12:38:06.002Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs [Entwurf]",
+              "DocumentMoniker": "C:\\Users\\aveen alhadad\\source\\repos\\InventoryManagement.App\\InventoryManagement.App\\Form1.cs",
+              "RelativeDocumentMoniker": "InventoryManagement.App\\Form1.cs",
+              "ToolTip": "C:\\Users\\aveen alhadad\\source\\repos\\InventoryManagement.App\\InventoryManagement.App\\Form1.cs [Entwurf]",
+              "RelativeToolTip": "InventoryManagement.App\\Form1.cs [Entwurf]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-20T10:13:30.661Z",
+              "EditorCaption": " [Entwurf]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
