@@ -16,3 +16,4 @@ C:\Users\aveen alhadad\source\repos\InventoryManagement.App\InventoryManagement.
 C:\Users\aveen alhadad\source\repos\InventoryManagement.App\InventoryManagement.App\obj\Debug\net8.0-windows\InventoryManagement.App.pdb
 C:\Users\aveen alhadad\source\repos\InventoryManagement.App\InventoryManagement.App\obj\Debug\net8.0-windows\InventoryManagement.App.genruntimeconfig.cache
 C:\Users\aveen alhadad\source\repos\InventoryManagement.App\InventoryManagement.App\obj\Debug\net8.0-windows\ref\InventoryManagement.App.dll
+C:\Users\aveen alhadad\source\repos\InventoryManagement.App\InventoryManagement.App\obj\Debug\net8.0-windows\InventoryManagement.App.ManageUsers.resources

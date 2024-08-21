@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             Panel1 = new Panel();
+            ClearLb = new Label();
             pictureBox = new PictureBox();
             PasswordChb = new CheckBox();
             LoginBtn = new Button();
@@ -36,7 +37,6 @@
             UnameTb = new TextBox();
             LoginLB = new Label();
             label2 = new Label();
-            ClearLb = new Label();
             Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox).BeginInit();
             SuspendLayout();
@@ -52,16 +52,28 @@
             Panel1.Controls.Add(UnameTb);
             Panel1.Controls.Add(LoginLB);
             Panel1.ForeColor = Color.White;
-            Panel1.Location = new Point(163, 88);
+            Panel1.Location = new Point(218, 119);
             Panel1.Name = "Panel1";
-            Panel1.Size = new Size(242, 362);
+            Panel1.Size = new Size(274, 392);
             Panel1.TabIndex = 0;
+            // 
+            // ClearLb
+            // 
+            ClearLb.AutoSize = true;
+            ClearLb.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            ClearLb.ForeColor = Color.Yellow;
+            ClearLb.Location = new Point(187, 263);
+            ClearLb.Name = "ClearLb";
+            ClearLb.Size = new Size(41, 17);
+            ClearLb.TabIndex = 7;
+            ClearLb.Text = "Reset";
+            ClearLb.Click += ClearLb_Click;
             // 
             // pictureBox
             // 
             pictureBox.BackgroundImage = Properties.Resources.unternehmenskultur;
             pictureBox.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox.Location = new Point(73, 69);
+            pictureBox.Location = new Point(89, 69);
             pictureBox.Name = "pictureBox";
             pictureBox.Size = new Size(84, 61);
             pictureBox.TabIndex = 6;
@@ -87,7 +99,7 @@
             LoginBtn.FlatStyle = FlatStyle.Flat;
             LoginBtn.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             LoginBtn.ForeColor = Color.DodgerBlue;
-            LoginBtn.Location = new Point(53, 308);
+            LoginBtn.Location = new Point(65, 321);
             LoginBtn.Name = "LoginBtn";
             LoginBtn.Size = new Size(130, 30);
             LoginBtn.TabIndex = 3;
@@ -101,7 +113,7 @@
             PasswordTb.ForeColor = Color.White;
             PasswordTb.Location = new Point(20, 221);
             PasswordTb.Name = "PasswordTb";
-            PasswordTb.Size = new Size(197, 29);
+            PasswordTb.Size = new Size(223, 29);
             PasswordTb.TabIndex = 2;
             PasswordTb.Text = "Kennwort";
             PasswordTb.UseSystemPasswordChar = true;
@@ -113,7 +125,7 @@
             UnameTb.ForeColor = Color.White;
             UnameTb.Location = new Point(20, 170);
             UnameTb.Name = "UnameTb";
-            UnameTb.Size = new Size(197, 29);
+            UnameTb.Size = new Size(223, 29);
             UnameTb.TabIndex = 1;
             UnameTb.Text = "Benutz Name";
             UnameTb.TextChanged += textBox1_TextChanged;
@@ -123,7 +135,7 @@
             LoginLB.AutoSize = true;
             LoginLB.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             LoginLB.ForeColor = Color.White;
-            LoginLB.Location = new Point(63, 22);
+            LoginLB.Location = new Point(77, 22);
             LoginLB.Name = "LoginLB";
             LoginLB.Size = new Size(114, 30);
             LoginLB.TabIndex = 0;
@@ -135,23 +147,11 @@
             label2.BackColor = Color.Transparent;
             label2.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label2.ForeColor = Color.White;
-            label2.Location = new Point(54, 26);
+            label2.Location = new Point(118, 26);
             label2.Name = "label2";
             label2.Size = new Size(464, 37);
             label2.TabIndex = 1;
             label2.Text = "BESTANDSMANAGEMENTSSYSTEM";
-            // 
-            // ClearLb
-            // 
-            ClearLb.AutoSize = true;
-            ClearLb.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            ClearLb.ForeColor = Color.Yellow;
-            ClearLb.Location = new Point(177, 263);
-            ClearLb.Name = "ClearLb";
-            ClearLb.Size = new Size(41, 17);
-            ClearLb.TabIndex = 7;
-            ClearLb.Text = "Reset";
-            ClearLb.Click += ClearLb_Click;
             // 
             // Form1
             // 
@@ -159,13 +159,14 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.pexels_tima_miroshnichenko_7567443;
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(584, 491);
+            ClientSize = new Size(723, 599);
             Controls.Add(label2);
             Controls.Add(Panel1);
             FormBorderStyle = FormBorderStyle.None;
             Name = "Form1";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";
+            Load += Form1_Load;
             Panel1.ResumeLayout(false);
             Panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox).EndInit();
