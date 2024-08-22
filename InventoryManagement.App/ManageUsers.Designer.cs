@@ -1,4 +1,5 @@
-﻿namespace InventoryManagement.App
+﻿
+namespace InventoryManagement.App
 {
     partial class ManageUsers
     {
@@ -28,6 +29,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
             panel1 = new Panel();
             label3 = new Label();
             label2 = new Label();
@@ -42,6 +46,7 @@
             button4 = new Button();
             UsersGv = new DataGridView();
             panel2 = new Panel();
+            label4 = new Label();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)UsersGv).BeginInit();
             SuspendLayout();
@@ -166,6 +171,7 @@
             button2.TabIndex = 6;
             button2.Text = "bearbeiten";
             button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
             // 
             // button3
             // 
@@ -199,12 +205,43 @@
             // 
             // UsersGv
             // 
+            UsersGv.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             UsersGv.BackgroundColor = Color.White;
             UsersGv.BorderStyle = BorderStyle.None;
+            UsersGv.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
+            UsersGv.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = Color.Crimson;
+            dataGridViewCellStyle1.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle1.ForeColor = Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = Color.White;
+            dataGridViewCellStyle1.SelectionForeColor = Color.Black;
+            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
+            UsersGv.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             UsersGv.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            UsersGv.Location = new Point(381, 171);
+            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = Color.White;
+            dataGridViewCellStyle2.Font = new Font("Segoe UI", 9F);
+            dataGridViewCellStyle2.ForeColor = Color.Black;
+            dataGridViewCellStyle2.SelectionBackColor = Color.White;
+            dataGridViewCellStyle2.SelectionForeColor = Color.FromArgb(0, 0, 64);
+            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.False;
+            UsersGv.DefaultCellStyle = dataGridViewCellStyle2;
+            UsersGv.EnableHeadersVisualStyles = false;
+            UsersGv.GridColor = Color.Gainsboro;
+            UsersGv.Location = new Point(371, 198);
             UsersGv.Name = "UsersGv";
-            UsersGv.Size = new Size(489, 379);
+            UsersGv.RowHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = SystemColors.Control;
+            dataGridViewCellStyle3.Font = new Font("Segoe UI", 9F);
+            dataGridViewCellStyle3.ForeColor = Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = Color.White;
+            dataGridViewCellStyle3.SelectionForeColor = Color.FromArgb(0, 0, 64);
+            dataGridViewCellStyle3.WrapMode = DataGridViewTriState.True;
+            UsersGv.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            UsersGv.RowHeadersVisible = false;
+            UsersGv.Size = new Size(489, 422);
             UsersGv.TabIndex = 9;
             UsersGv.CellContentClick += UsersGv_CellContentClick;
             // 
@@ -212,17 +249,29 @@
             // 
             panel2.BackColor = Color.MediumSlateBlue;
             panel2.Dock = DockStyle.Bottom;
-            panel2.Location = new Point(0, 577);
+            panel2.Location = new Point(0, 636);
             panel2.Name = "panel2";
-            panel2.Size = new Size(902, 14);
+            panel2.Size = new Size(902, 20);
             panel2.TabIndex = 10;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Font = new Font("Segoe UI Semibold", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label4.ForeColor = Color.Crimson;
+            label4.Location = new Point(517, 144);
+            label4.Name = "label4";
+            label4.Size = new Size(176, 37);
+            label4.TabIndex = 11;
+            label4.Text = "Benutzerliste";
             // 
             // ManageUsers
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Lavender;
-            ClientSize = new Size(902, 591);
+            ClientSize = new Size(902, 656);
+            Controls.Add(label4);
             Controls.Add(panel2);
             Controls.Add(UsersGv);
             Controls.Add(button4);
@@ -246,6 +295,11 @@
             PerformLayout();
         }
 
+        //private void UsersGv_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        //{
+        //   throw new NotImplementedException();
+        //}
+
         #endregion
 
         private Panel panel1;
@@ -262,5 +316,6 @@
         private DataGridView UsersGv;
         private Panel panel2;
         private Label label3;
+        private Label label4;
     }
 }
