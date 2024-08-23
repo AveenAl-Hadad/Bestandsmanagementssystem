@@ -10,9 +10,9 @@ using System.Windows.Forms;
 using System.Data.SqlClient;
 namespace InventoryManagement.App;
 
-public partial class ManageeCustomers : Form
+public partial class ManageCustomers : Form
 {
-    public ManageeCustomers()
+    public ManageCustomers()
     {
         InitializeComponent();
         populate();

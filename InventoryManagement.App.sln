@@ -3,7 +3,14 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35208.52
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InventoryManagement.App", "InventoryManagement.App\InventoryManagement.App.csproj", "{C5EC86CD-A28D-4B99-9E32-C4A7E2CBE4C8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InventoryManagement.App", "InventoryManagement.App\InventoryManagement.App.csproj", "{C5EC86CD-A28D-4B99-9E32-C4A7E2CBE4C8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GUI", "GUI", "{561F4775-DBAF-4278-B58C-5DA9A239EAE4}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\OneDrive\Documents\Aveen\Mein Projekt\Anmelden.PNG = ..\..\..\OneDrive\Documents\Aveen\Mein Projekt\Anmelden.PNG
+		..\..\..\OneDrive\Documents\Aveen\Mein Projekt\Benutzer verwalten.PNG = ..\..\..\OneDrive\Documents\Aveen\Mein Projekt\Benutzer verwalten.PNG
+		..\..\..\OneDrive\Documents\Aveen\Mein Projekt\Kunden verwalten.PNG = ..\..\..\OneDrive\Documents\Aveen\Mein Projekt\Kunden verwalten.PNG
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

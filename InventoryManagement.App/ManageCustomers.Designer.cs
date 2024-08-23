@@ -1,6 +1,6 @@
 ﻿namespace InventoryManagement.App
 {
-    partial class ManageeCustomers
+    partial class ManageCustomers
     {
         /// <summary>
         /// Required designer variable.
