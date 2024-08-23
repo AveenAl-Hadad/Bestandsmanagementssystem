@@ -70,3 +70,4 @@ C:\Users\aveen alhadad\source\repos\InventoryManagement.App\InventoryManagement.
 C:\Users\aveen alhadad\source\repos\InventoryManagement.App\InventoryManagement.App\obj\Debug\net8.0-windows\InventoryManagement.App.csproj.AssemblyReference.cache
 C:\Users\aveen alhadad\source\repos\InventoryManagement.App\InventoryManagement.App\obj\Debug\net8.0-windows\Inventor.E96C00EB.Up2Date
 C:\Users\aveen alhadad\source\repos\InventoryManagement.App\InventoryManagement.App\obj\Debug\net8.0-windows\InventoryManagement.App.ManageCustomers.resources
+C:\Users\aveen alhadad\source\repos\InventoryManagement.App\InventoryManagement.App\obj\Debug\net8.0-windows\InventoryManagement.App.ManageCategories.resources
