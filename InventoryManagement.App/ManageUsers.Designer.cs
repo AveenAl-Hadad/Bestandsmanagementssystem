@@ -29,9 +29,9 @@ namespace InventoryManagement.App
         /// </summary>
         private void InitializeComponent()
         {
-            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle7 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle8 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle9 = new DataGridViewCellStyle();
             panel1 = new Panel();
             label3 = new Label();
             label2 = new Label();
@@ -103,7 +103,7 @@ namespace InventoryManagement.App
             UnameTb.BorderStyle = BorderStyle.FixedSingle;
             UnameTb.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             UnameTb.ForeColor = Color.MediumSlateBlue;
-            UnameTb.Location = new Point(12, 171);
+            UnameTb.Location = new Point(12, 209);
             UnameTb.Name = "UnameTb";
             UnameTb.PlaceholderText = " Benutzername";
             UnameTb.Size = new Size(248, 29);
@@ -114,7 +114,7 @@ namespace InventoryManagement.App
             FnameTb.BorderStyle = BorderStyle.FixedSingle;
             FnameTb.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             FnameTb.ForeColor = Color.MediumSlateBlue;
-            FnameTb.Location = new Point(12, 215);
+            FnameTb.Location = new Point(12, 258);
             FnameTb.Name = "FnameTb";
             FnameTb.PlaceholderText = " vollständiger Name";
             FnameTb.Size = new Size(248, 29);
@@ -126,7 +126,7 @@ namespace InventoryManagement.App
             UpasswordTb.BorderStyle = BorderStyle.FixedSingle;
             UpasswordTb.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             UpasswordTb.ForeColor = Color.MediumSlateBlue;
-            UpasswordTb.Location = new Point(11, 262);
+            UpasswordTb.Location = new Point(12, 310);
             UpasswordTb.Name = "UpasswordTb";
             UpasswordTb.PlaceholderText = " Kennwort";
             UpasswordTb.Size = new Size(248, 29);
@@ -137,7 +137,7 @@ namespace InventoryManagement.App
             UphoneTb.BorderStyle = BorderStyle.FixedSingle;
             UphoneTb.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             UphoneTb.ForeColor = Color.MediumSlateBlue;
-            UphoneTb.Location = new Point(12, 307);
+            UphoneTb.Location = new Point(12, 358);
             UphoneTb.Name = "UphoneTb";
             UphoneTb.PlaceholderText = "  Telefon";
             UphoneTb.Size = new Size(248, 29);
@@ -150,7 +150,7 @@ namespace InventoryManagement.App
             button1.FlatStyle = FlatStyle.Flat;
             button1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button1.ForeColor = Color.White;
-            button1.Location = new Point(12, 375);
+            button1.Location = new Point(12, 429);
             button1.Name = "button1";
             button1.Size = new Size(104, 39);
             button1.TabIndex = 5;
@@ -165,7 +165,7 @@ namespace InventoryManagement.App
             button2.FlatStyle = FlatStyle.Flat;
             button2.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button2.ForeColor = Color.White;
-            button2.Location = new Point(122, 375);
+            button2.Location = new Point(122, 429);
             button2.Name = "button2";
             button2.Size = new Size(102, 39);
             button2.TabIndex = 6;
@@ -180,7 +180,7 @@ namespace InventoryManagement.App
             button3.FlatStyle = FlatStyle.Flat;
             button3.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button3.ForeColor = Color.White;
-            button3.Location = new Point(230, 375);
+            button3.Location = new Point(230, 429);
             button3.Name = "button3";
             button3.Size = new Size(96, 39);
             button3.TabIndex = 7;
@@ -195,7 +195,7 @@ namespace InventoryManagement.App
             button4.FlatStyle = FlatStyle.Flat;
             button4.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button4.ForeColor = Color.White;
-            button4.Location = new Point(122, 439);
+            button4.Location = new Point(122, 497);
             button4.Name = "button4";
             button4.Size = new Size(102, 39);
             button4.TabIndex = 8;
@@ -210,36 +210,36 @@ namespace InventoryManagement.App
             UsersGv.BorderStyle = BorderStyle.None;
             UsersGv.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
             UsersGv.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = Color.Crimson;
-            dataGridViewCellStyle1.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            dataGridViewCellStyle1.ForeColor = Color.White;
-            dataGridViewCellStyle1.SelectionBackColor = Color.White;
-            dataGridViewCellStyle1.SelectionForeColor = Color.Black;
-            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
-            UsersGv.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle7.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle7.BackColor = Color.Crimson;
+            dataGridViewCellStyle7.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle7.ForeColor = Color.White;
+            dataGridViewCellStyle7.SelectionBackColor = Color.White;
+            dataGridViewCellStyle7.SelectionForeColor = Color.Black;
+            dataGridViewCellStyle7.WrapMode = DataGridViewTriState.True;
+            UsersGv.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
             UsersGv.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = Color.White;
-            dataGridViewCellStyle2.Font = new Font("Segoe UI", 9F);
-            dataGridViewCellStyle2.ForeColor = Color.Black;
-            dataGridViewCellStyle2.SelectionBackColor = Color.White;
-            dataGridViewCellStyle2.SelectionForeColor = Color.FromArgb(0, 0, 64);
-            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.False;
-            UsersGv.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle8.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = Color.White;
+            dataGridViewCellStyle8.Font = new Font("Segoe UI", 9F);
+            dataGridViewCellStyle8.ForeColor = Color.Black;
+            dataGridViewCellStyle8.SelectionBackColor = Color.White;
+            dataGridViewCellStyle8.SelectionForeColor = Color.FromArgb(0, 0, 64);
+            dataGridViewCellStyle8.WrapMode = DataGridViewTriState.False;
+            UsersGv.DefaultCellStyle = dataGridViewCellStyle8;
             UsersGv.EnableHeadersVisualStyles = false;
             UsersGv.GridColor = Color.Gainsboro;
             UsersGv.Location = new Point(371, 198);
             UsersGv.Name = "UsersGv";
             UsersGv.RowHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = SystemColors.Control;
-            dataGridViewCellStyle3.Font = new Font("Segoe UI", 9F);
-            dataGridViewCellStyle3.ForeColor = Color.Black;
-            dataGridViewCellStyle3.SelectionBackColor = Color.White;
-            dataGridViewCellStyle3.SelectionForeColor = Color.FromArgb(0, 0, 64);
-            dataGridViewCellStyle3.WrapMode = DataGridViewTriState.True;
-            UsersGv.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle9.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = SystemColors.Control;
+            dataGridViewCellStyle9.Font = new Font("Segoe UI", 9F);
+            dataGridViewCellStyle9.ForeColor = Color.Black;
+            dataGridViewCellStyle9.SelectionBackColor = Color.White;
+            dataGridViewCellStyle9.SelectionForeColor = Color.FromArgb(0, 0, 64);
+            dataGridViewCellStyle9.WrapMode = DataGridViewTriState.True;
+            UsersGv.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
             UsersGv.RowHeadersVisible = false;
             UsersGv.Size = new Size(489, 422);
             UsersGv.TabIndex = 9;
@@ -261,9 +261,9 @@ namespace InventoryManagement.App
             label4.ForeColor = Color.Crimson;
             label4.Location = new Point(517, 144);
             label4.Name = "label4";
-            label4.Size = new Size(176, 37);
+            label4.Size = new Size(221, 37);
             label4.TabIndex = 11;
-            label4.Text = "Benutzerliste";
+            label4.Text = "BENUTZER LISTE";
             // 
             // ManageUsers
             // 

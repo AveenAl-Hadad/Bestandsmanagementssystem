@@ -24,7 +24,7 @@ namespace InventoryManagement.App
         {
 
         }
-        // Delete
+        // löschen Btn
         private void button3_Click(object sender, EventArgs e)
         {
             if (UphoneTb.Text == "")
@@ -37,7 +37,7 @@ namespace InventoryManagement.App
                 string myquery = " delete from BenutzerTbl where Telefon ='" + UphoneTb.Text + "';";
                 SqlCommand cmd = new SqlCommand(myquery, con);
                 cmd.ExecuteNonQuery();
-                MessageBox.Show("Der Benutzer hat erfolgreich gelöscht");
+                MessageBox.Show("Der Benutzer wurde erfolgreich gelöscht");
                 con.Close();
                 populate();
             }
@@ -72,7 +72,7 @@ namespace InventoryManagement.App
                 MessageBox.Show("Fehler beim Laden der Daten: " + ex.Message);
             }
         }
-        // Speichern Button
+        // Speichern Btn
         private void button1_Click(object sender, EventArgs e)
         {
 
@@ -114,7 +114,7 @@ namespace InventoryManagement.App
         {
 
         }
-
+        // bearbeiten Btn
         private void button2_Click(object sender, EventArgs e)
         {
             try
@@ -128,7 +128,7 @@ namespace InventoryManagement.App
                 cmd.Parameters.AddWithValue("@Password", UpasswordTb.Text);
                 cmd.Parameters.AddWithValue("@Phone", UphoneTb.Text);
                 cmd.ExecuteNonQuery();
-                MessageBox.Show("Benutzer erfolgreich aktualisiert");
+                MessageBox.Show("Der Benutzer wurde erfolgreich aktualisiert");
                 con.Close();
                 populate();
 
