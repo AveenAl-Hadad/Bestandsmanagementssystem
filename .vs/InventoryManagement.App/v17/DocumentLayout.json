@@ -3,19 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\aveen alhadad\\source\\repos\\InventoryManagement.App\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C5EC86CD-A28D-4B99-9E32-C4A7E2CBE4C8}|InventoryManagement.App\\InventoryManagement.App.csproj|c:\\users\\aveen alhadad\\source\\repos\\inventorymanagement.app\\inventorymanagement.app\\managecategories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C5EC86CD-A28D-4B99-9E32-C4A7E2CBE4C8}|InventoryManagement.App\\InventoryManagement.App.csproj|solutionrelative:inventorymanagement.app\\managecategories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C5EC86CD-A28D-4B99-9E32-C4A7E2CBE4C8}|InventoryManagement.App\\InventoryManagement.App.csproj|c:\\users\\aveen alhadad\\source\\repos\\inventorymanagement.app\\inventorymanagement.app\\manageproducts.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5EC86CD-A28D-4B99-9E32-C4A7E2CBE4C8}|InventoryManagement.App\\InventoryManagement.App.csproj|solutionrelative:inventorymanagement.app\\manageproducts.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C5EC86CD-A28D-4B99-9E32-C4A7E2CBE4C8}|InventoryManagement.App\\InventoryManagement.App.csproj|c:\\users\\aveen alhadad\\source\\repos\\inventorymanagement.app\\inventorymanagement.app\\managecategories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{C5EC86CD-A28D-4B99-9E32-C4A7E2CBE4C8}|InventoryManagement.App\\InventoryManagement.App.csproj|solutionrelative:inventorymanagement.app\\managecategories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{C5EC86CD-A28D-4B99-9E32-C4A7E2CBE4C8}|InventoryManagement.App\\InventoryManagement.App.csproj|C:\\Users\\aveen alhadad\\source\\repos\\InventoryManagement.App\\inventorymanagement.app\\manageproducts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C5EC86CD-A28D-4B99-9E32-C4A7E2CBE4C8}|InventoryManagement.App\\InventoryManagement.App.csproj|solutionrelative:inventorymanagement.app\\manageproducts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/InventoryDB/True/SqlTable/dbo.KategorienTbl.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+      "AbsoluteMoniker": "D:0:0:{C5EC86CD-A28D-4B99-9E32-C4A7E2CBE4C8}|InventoryManagement.App\\InventoryManagement.App.csproj|c:\\users\\aveen alhadad\\source\\repos\\inventorymanagement.app\\inventorymanagement.app\\manageproducts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5EC86CD-A28D-4B99-9E32-C4A7E2CBE4C8}|InventoryManagement.App\\InventoryManagement.App.csproj|solutionrelative:inventorymanagement.app\\manageproducts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C5EC86CD-A28D-4B99-9E32-C4A7E2CBE4C8}|InventoryManagement.App\\InventoryManagement.App.csproj|c:\\users\\aveen alhadad\\source\\repos\\inventorymanagement.app\\inventorymanagement.app\\managecustomers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C5EC86CD-A28D-4B99-9E32-C4A7E2CBE4C8}|InventoryManagement.App\\InventoryManagement.App.csproj|solutionrelative:inventorymanagement.app\\managecustomers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C5EC86CD-A28D-4B99-9E32-C4A7E2CBE4C8}|InventoryManagement.App\\InventoryManagement.App.csproj|c:\\users\\aveen alhadad\\source\\repos\\inventorymanagement.app\\inventorymanagement.app\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5EC86CD-A28D-4B99-9E32-C4A7E2CBE4C8}|InventoryManagement.App\\InventoryManagement.App.csproj|solutionrelative:inventorymanagement.app\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -25,55 +26,58 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "dbo.KategorienTbl [Daten]",
-              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/InventoryDB/True/SqlTable/dbo.KategorienTbl.sql",
-              "ToolTip": "dbo.KategorienTbl [Daten]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2024-08-23T13:15:29.945Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ManageCategories.cs",
-              "DocumentMoniker": "C:\\Users\\aveen alhadad\\source\\repos\\InventoryManagement.App\\InventoryManagement.App\\ManageCategories.cs",
-              "RelativeDocumentMoniker": "InventoryManagement.App\\ManageCategories.cs",
-              "ToolTip": "C:\\Users\\aveen alhadad\\source\\repos\\InventoryManagement.App\\InventoryManagement.App\\ManageCategories.cs",
-              "RelativeToolTip": "InventoryManagement.App\\ManageCategories.cs",
-              "ViewState": "AgIAAGQAAAAAAAAAAAAqwHQAAAAFAAAAAAAAAA==",
+              "Title": "ManageProducts.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\aveen alhadad\\source\\repos\\InventoryManagement.App\\InventoryManagement.App\\ManageProducts.Designer.cs",
+              "RelativeDocumentMoniker": "InventoryManagement.App\\ManageProducts.Designer.cs",
+              "ToolTip": "C:\\Users\\aveen alhadad\\source\\repos\\InventoryManagement.App\\InventoryManagement.App\\ManageProducts.Designer.cs",
+              "RelativeToolTip": "InventoryManagement.App\\ManageProducts.Designer.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAgwIIBAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-23T12:51:42.72Z",
+              "WhenOpened": "2024-08-24T14:44:12.936Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "ManageCustomers.cs",
-              "DocumentMoniker": "C:\\Users\\aveen alhadad\\source\\repos\\InventoryManagement.App\\InventoryManagement.App\\ManageCustomers.cs",
-              "RelativeDocumentMoniker": "InventoryManagement.App\\ManageCustomers.cs",
-              "ToolTip": "C:\\Users\\aveen alhadad\\source\\repos\\InventoryManagement.App\\InventoryManagement.App\\ManageCustomers.cs",
-              "RelativeToolTip": "InventoryManagement.App\\ManageCustomers.cs",
-              "ViewState": "AgIAAFsAAAAAAAAAAAAwwHYAAAAJAAAAAAAAAA==",
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\aveen alhadad\\source\\repos\\InventoryManagement.App\\InventoryManagement.App\\Program.cs",
+              "RelativeDocumentMoniker": "InventoryManagement.App\\Program.cs",
+              "ToolTip": "C:\\Users\\aveen alhadad\\source\\repos\\InventoryManagement.App\\InventoryManagement.App\\Program.cs",
+              "RelativeToolTip": "InventoryManagement.App\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-23T12:51:26.35Z",
+              "WhenOpened": "2024-08-24T13:50:05.47Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ManageCategories.cs [Entwurf]",
-              "DocumentMoniker": "C:\\Users\\aveen alhadad\\source\\repos\\InventoryManagement.App\\InventoryManagement.App\\ManageCategories.cs",
-              "RelativeDocumentMoniker": "InventoryManagement.App\\ManageCategories.cs",
-              "ToolTip": "C:\\Users\\aveen alhadad\\source\\repos\\InventoryManagement.App\\InventoryManagement.App\\ManageCategories.cs [Entwurf]",
-              "RelativeToolTip": "InventoryManagement.App\\ManageCategories.cs [Entwurf]",
+              "Title": "ManageProducts.cs [Entwurf]",
+              "DocumentMoniker": "C:\\Users\\aveen alhadad\\source\\repos\\InventoryManagement.App\\InventoryManagement.App\\ManageProducts.cs",
+              "RelativeDocumentMoniker": "InventoryManagement.App\\ManageProducts.cs",
+              "ToolTip": "C:\\Users\\aveen alhadad\\source\\repos\\InventoryManagement.App\\InventoryManagement.App\\ManageProducts.cs [Entwurf]",
+              "RelativeToolTip": "InventoryManagement.App\\ManageProducts.cs [Entwurf]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-23T12:36:30.852Z",
+              "WhenOpened": "2024-08-24T13:42:21.496Z",
               "EditorCaption": " [Entwurf]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ManageProducts.cs",
+              "DocumentMoniker": "C:\\Users\\aveen alhadad\\source\\repos\\InventoryManagement.App\\InventoryManagement.App\\ManageProducts.cs",
+              "RelativeDocumentMoniker": "InventoryManagement.App\\ManageProducts.cs",
+              "ToolTip": "C:\\Users\\aveen alhadad\\source\\repos\\InventoryManagement.App\\InventoryManagement.App\\ManageProducts.cs",
+              "RelativeToolTip": "InventoryManagement.App\\ManageProducts.cs",
+              "ViewState": "AgIAAIsAAAAAAAAAAAAAAKoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-24T13:22:46.147Z",
+              "EditorCaption": ""
             }
           ]
         }
