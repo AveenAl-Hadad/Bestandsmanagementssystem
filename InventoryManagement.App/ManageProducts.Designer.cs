@@ -136,7 +136,7 @@
             PGV.DefaultCellStyle = dataGridViewCellStyle2;
             PGV.EnableHeadersVisualStyles = false;
             PGV.GridColor = Color.Gainsboro;
-            PGV.Location = new Point(332, 224);
+            PGV.Location = new Point(323, 211);
             PGV.Name = "PGV";
             PGV.RowHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
@@ -241,9 +241,9 @@
             label4.ForeColor = Color.White;
             label4.Location = new Point(470, 125);
             label4.Name = "label4";
-            label4.Size = new Size(256, 37);
+            label4.Size = new Size(226, 37);
             label4.TabIndex = 27;
-            label4.Text = "Produkte verwalten";
+            label4.Text = "PRODUKTE LISTE";
             // 
             // pqty
             // 
@@ -334,6 +334,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.Lavender;
             ClientSize = new Size(902, 681);
             Controls.Add(button6);
             Controls.Add(button5);
