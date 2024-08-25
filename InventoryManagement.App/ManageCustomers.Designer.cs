@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DataGridViewCellStyle dataGridViewCellStyle7 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle8 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle9 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
             panel1 = new Panel();
             label3 = new Label();
             label2 = new Label();
@@ -46,13 +46,13 @@
             button4 = new Button();
             panel2 = new Panel();
             panel3 = new Panel();
-            label6 = new Label();
+            OrdersLab = new Label();
             label5 = new Label();
             panel4 = new Panel();
-            label7 = new Label();
+            AmountLab = new Label();
             label8 = new Label();
             panel5 = new Panel();
-            label9 = new Label();
+            DateLab = new Label();
             label10 = new Label();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)CustomersGV).BeginInit();
@@ -158,36 +158,36 @@
             CustomersGV.BorderStyle = BorderStyle.None;
             CustomersGV.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
             CustomersGV.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle7.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle7.BackColor = Color.Crimson;
-            dataGridViewCellStyle7.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            dataGridViewCellStyle7.ForeColor = Color.White;
-            dataGridViewCellStyle7.SelectionBackColor = Color.White;
-            dataGridViewCellStyle7.SelectionForeColor = Color.Black;
-            dataGridViewCellStyle7.WrapMode = DataGridViewTriState.True;
-            CustomersGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = Color.Crimson;
+            dataGridViewCellStyle1.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle1.ForeColor = Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = Color.White;
+            dataGridViewCellStyle1.SelectionForeColor = Color.Black;
+            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
+            CustomersGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             CustomersGV.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle8.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = Color.White;
-            dataGridViewCellStyle8.Font = new Font("Segoe UI", 9F);
-            dataGridViewCellStyle8.ForeColor = Color.Black;
-            dataGridViewCellStyle8.SelectionBackColor = Color.White;
-            dataGridViewCellStyle8.SelectionForeColor = Color.FromArgb(0, 0, 64);
-            dataGridViewCellStyle8.WrapMode = DataGridViewTriState.False;
-            CustomersGV.DefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = Color.White;
+            dataGridViewCellStyle2.Font = new Font("Segoe UI", 9F);
+            dataGridViewCellStyle2.ForeColor = Color.Black;
+            dataGridViewCellStyle2.SelectionBackColor = Color.White;
+            dataGridViewCellStyle2.SelectionForeColor = Color.FromArgb(0, 0, 64);
+            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.False;
+            CustomersGV.DefaultCellStyle = dataGridViewCellStyle2;
             CustomersGV.EnableHeadersVisualStyles = false;
             CustomersGV.GridColor = Color.Gainsboro;
             CustomersGV.Location = new Point(394, 164);
             CustomersGV.Name = "CustomersGV";
             CustomersGV.RowHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle9.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = SystemColors.Control;
-            dataGridViewCellStyle9.Font = new Font("Segoe UI", 9F);
-            dataGridViewCellStyle9.ForeColor = Color.Black;
-            dataGridViewCellStyle9.SelectionBackColor = Color.White;
-            dataGridViewCellStyle9.SelectionForeColor = Color.FromArgb(0, 0, 64);
-            dataGridViewCellStyle9.WrapMode = DataGridViewTriState.True;
-            CustomersGV.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = SystemColors.Control;
+            dataGridViewCellStyle3.Font = new Font("Segoe UI", 9F);
+            dataGridViewCellStyle3.ForeColor = Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = Color.White;
+            dataGridViewCellStyle3.SelectionForeColor = Color.FromArgb(0, 0, 64);
+            dataGridViewCellStyle3.WrapMode = DataGridViewTriState.True;
+            CustomersGV.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             CustomersGV.RowHeadersVisible = false;
             CustomersGV.Size = new Size(489, 373);
             CustomersGV.TabIndex = 13;
@@ -264,24 +264,24 @@
             // panel3
             // 
             panel3.BackColor = Color.Crimson;
-            panel3.Controls.Add(label6);
+            panel3.Controls.Add(OrdersLab);
             panel3.Controls.Add(label5);
             panel3.Location = new Point(39, 551);
             panel3.Name = "panel3";
-            panel3.Size = new Size(199, 104);
+            panel3.Size = new Size(250, 104);
             panel3.TabIndex = 19;
             // 
-            // label6
+            // OrdersLab
             // 
-            label6.AutoSize = true;
-            label6.BackColor = Color.Transparent;
-            label6.Font = new Font("Segoe UI Semibold", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label6.ForeColor = Color.White;
-            label6.Location = new Point(34, 51);
-            label6.Name = "label6";
-            label6.Size = new Size(101, 37);
-            label6.TabIndex = 13;
-            label6.Text = "Anzahl";
+            OrdersLab.AutoSize = true;
+            OrdersLab.BackColor = Color.Transparent;
+            OrdersLab.Font = new Font("Segoe UI Semibold", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            OrdersLab.ForeColor = Color.White;
+            OrdersLab.Location = new Point(0, 48);
+            OrdersLab.Name = "OrdersLab";
+            OrdersLab.Size = new Size(101, 37);
+            OrdersLab.TabIndex = 13;
+            OrdersLab.Text = "Anzahl";
             // 
             // label5
             // 
@@ -297,24 +297,24 @@
             // panel4
             // 
             panel4.BackColor = Color.ForestGreen;
-            panel4.Controls.Add(label7);
+            panel4.Controls.Add(AmountLab);
             panel4.Controls.Add(label8);
             panel4.Location = new Point(295, 551);
             panel4.Name = "panel4";
-            panel4.Size = new Size(199, 104);
+            panel4.Size = new Size(262, 104);
             panel4.TabIndex = 20;
             // 
-            // label7
+            // AmountLab
             // 
-            label7.AutoSize = true;
-            label7.BackColor = Color.Transparent;
-            label7.Font = new Font("Segoe UI Semibold", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label7.ForeColor = Color.White;
-            label7.Location = new Point(31, 48);
-            label7.Name = "label7";
-            label7.Size = new Size(102, 37);
-            label7.TabIndex = 13;
-            label7.Text = "Menge";
+            AmountLab.AutoSize = true;
+            AmountLab.BackColor = Color.Transparent;
+            AmountLab.Font = new Font("Segoe UI Semibold", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            AmountLab.ForeColor = Color.White;
+            AmountLab.Location = new Point(3, 48);
+            AmountLab.Name = "AmountLab";
+            AmountLab.Size = new Size(97, 37);
+            AmountLab.TabIndex = 13;
+            AmountLab.Text = "Betrag";
             // 
             // label8
             // 
@@ -323,31 +323,31 @@
             label8.ForeColor = Color.White;
             label8.Location = new Point(3, 2);
             label8.Name = "label8";
-            label8.Size = new Size(107, 21);
+            label8.Size = new Size(104, 21);
             label8.TabIndex = 2;
-            label8.Text = "Betellmenge";
+            label8.Text = "BetellBetrag";
             // 
             // panel5
             // 
             panel5.BackColor = Color.Blue;
-            panel5.Controls.Add(label9);
+            panel5.Controls.Add(DateLab);
             panel5.Controls.Add(label10);
-            panel5.Location = new Point(544, 550);
+            panel5.Location = new Point(563, 550);
             panel5.Name = "panel5";
-            panel5.Size = new Size(199, 104);
+            panel5.Size = new Size(259, 104);
             panel5.TabIndex = 20;
             // 
-            // label9
+            // DateLab
             // 
-            label9.AutoSize = true;
-            label9.BackColor = Color.Transparent;
-            label9.Font = new Font("Segoe UI Semibold", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label9.ForeColor = Color.White;
-            label9.Location = new Point(42, 51);
-            label9.Name = "label9";
-            label9.Size = new Size(100, 37);
-            label9.TabIndex = 13;
-            label9.Text = "Datum";
+            DateLab.AutoSize = true;
+            DateLab.BackColor = Color.Transparent;
+            DateLab.Font = new Font("Segoe UI Semibold", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            DateLab.ForeColor = Color.White;
+            DateLab.Location = new Point(0, 49);
+            DateLab.Name = "DateLab";
+            DateLab.Size = new Size(100, 37);
+            DateLab.TabIndex = 13;
+            DateLab.Text = "Datum";
             // 
             // label10
             // 
@@ -415,12 +415,12 @@
         private Panel panel2;
         private Panel panel3;
         private Label label5;
-        private Label label6;
+        private Label OrdersLab;
         private Panel panel4;
-        private Label label7;
+        private Label AmountLab;
         private Label label8;
         private Panel panel5;
-        private Label label9;
+        private Label DateLab;
         private Label label10;
     }
 }

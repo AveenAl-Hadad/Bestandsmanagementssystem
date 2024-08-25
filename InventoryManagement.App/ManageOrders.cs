@@ -99,9 +99,9 @@ namespace InventoryManagement.App
             table.Columns.Add("Gesamtpreis", typeof(int));
 
             OGV.DataSource = table;
-            
+
         }
-                private void label5_Click(object sender, EventArgs e)
+        private void label5_Click(object sender, EventArgs e)
         {
 
         }
@@ -112,12 +112,13 @@ namespace InventoryManagement.App
             {
                 DataGridViewRow row = CGV.Rows[e.RowIndex];
                 CID.Text = row.Cells[0].Value.ToString();
+                Kname.Text = row.Cells[1].Value.ToString();
             }
         }
 
         private void searchCombo_SelectionChangeCommitted(object sender, EventArgs e)
         {
-          try
+            try
             {
                 con.Open();
                 string Myquery = "select * from ProdukteTbl where KName ='" + searchCombo.SelectedValue.ToString() + "'";
@@ -150,7 +151,7 @@ namespace InventoryManagement.App
                 flag = 1;
             }
         }
-        int sum = 0;      
+        int sum = 0;
         private void button5_Click(object sender, EventArgs e)
         {
             if (qtyTb.Text == "")
@@ -158,7 +159,7 @@ namespace InventoryManagement.App
             else if (flag == 0)
                 MessageBox.Show("Wählen Sie die Produkte");
             else if (Convert.ToInt32(qtyTb.Text) > stock)
-               MessageBox.Show("nicht genügend Lagerbestand vorhanden");
+                MessageBox.Show("nicht genügend Lagerbestand vorhanden");
             else
             {
                 num = num + 1;
@@ -179,9 +180,14 @@ namespace InventoryManagement.App
         {
             try
             {
-                    //int id = Convert.ToInt32(PGV.SelectedRows[0].Cells[0].Value.ToString());
+                int newQty = stock - Convert.ToInt32(qtyTb.Text);
+                if (newQty < 0)
+                {
+                    MessageBox.Show("Vorgang ist fehlgeschlagen");
+                }
+                else
+                {
                     con.Open();
-                    int newQty = stock - Convert.ToInt32(qtyTb.Text);
                     string query = "UPDATE ProdukteTbl SET Menge = @newQty WHERE Id = @id";
                     SqlCommand cmd = new SqlCommand(query, con);
                     cmd.Parameters.AddWithValue("@newQty", newQty);
@@ -189,8 +195,9 @@ namespace InventoryManagement.App
                     cmd.ExecuteNonQuery();
                     con.Close();
                     populateProducts();
+                }
             }
-                
+
             catch (Exception ex)
             {
                 MessageBox.Show("Fehler beim Aktualisieren der Produkte: " + ex.Message);
@@ -198,6 +205,77 @@ namespace InventoryManagement.App
                     con.Close();
             }
         }
-       
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(OID.Text) || string.IsNullOrWhiteSpace(CID.Text) || string.IsNullOrWhiteSpace(Kname.Text) || string.IsNullOrWhiteSpace(TotAmount.Text))
+            {
+                MessageBox.Show("Füllen Sie die Daten korrekt aus.");
+                return;
+            }
+
+            try
+            {
+                con.Open();
+
+                // SQL-Abfrage mit Parametern
+                string query = "INSERT INTO BestellungenTbl (Bestell_Id, Kunden_Id, Kunden_Name, Bestelldatum, Gesamtbetrag) VALUES (@OID, @CID, @Kname, @Odate, @TotAmount)";
+                SqlCommand cmd = new SqlCommand(query, con);
+
+                // Parameter hinzufügen und sicherstellen, dass sie die richtigen Datentypen haben
+                cmd.Parameters.AddWithValue("@OID", Convert.ToInt32(OID.Text)); // OID ist int
+                cmd.Parameters.AddWithValue("@CID", Convert.ToInt32(CID.Text)); // CID ist int
+                cmd.Parameters.AddWithValue("@Kname", Kname.Text); // Kname ist varchar(50)
+
+                // Odate ist DateTime, daher versuchen wir, es zu konvertieren
+                DateTime orderDate;
+                if (DateTime.TryParse(Odate.Text, out orderDate))
+                {
+                    cmd.Parameters.AddWithValue("@Odate", orderDate); // Datum korrekt als Parameter hinzufügen
+                }
+                else
+                {
+                    MessageBox.Show("Ungültiges Datum.");
+                    return;
+                }
+
+                // TotAmount ist int, daher konvertieren wir den Text in eine Ganzzahl
+                int totalAmount;
+                if (int.TryParse(TotAmount.Text.Replace("Rs ", ""), out totalAmount))
+                {
+                    cmd.Parameters.AddWithValue("@TotAmount", totalAmount);
+                }
+                else
+                {
+                    MessageBox.Show("Ungültiger Gesamtbetrag.");
+                    return;
+                }
+
+                // Ausführen der SQL-Abfrage
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Die Bestellung wurde erfolgreich hinzugefügt.");
+            }
+            catch (SqlException sqlEx)
+            {
+                MessageBox.Show("SQL-Fehler: " + sqlEx.Message);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Allgemeiner Fehler: " + ex.Message);
+            }
+            finally
+            {
+                if (con.State == ConnectionState.Open)
+                {
+                    con.Close();
+                }
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            ViewOrders view = new ViewOrders();
+            view.Show();
+        }
     }
 }

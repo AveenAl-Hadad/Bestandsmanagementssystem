@@ -45,7 +45,7 @@
             CGV = new DataGridView();
             OID = new TextBox();
             CID = new TextBox();
-            dateTimePicker1 = new DateTimePicker();
+            Odate = new DateTimePicker();
             panel2 = new Panel();
             label5 = new Label();
             searchCombo = new ComboBox();
@@ -55,9 +55,11 @@
             button5 = new Button();
             OGV = new DataGridView();
             Product = new DataGridViewTextBoxColumn();
-            textBox1 = new TextBox();
+            Kname = new TextBox();
             labl = new Label();
             TotAmount = new Label();
+            button1 = new Button();
+            button2 = new Button();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)CGV).BeginInit();
             ((System.ComponentModel.ISupportInitialize)PGV).BeginInit();
@@ -73,7 +75,7 @@
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(902, 109);
+            panel1.Size = new Size(961, 109);
             panel1.TabIndex = 3;
             // 
             // label3
@@ -81,7 +83,7 @@
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI Semibold", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label3.ForeColor = Color.White;
-            label3.Location = new Point(848, 2);
+            label3.Location = new Point(924, 0);
             label3.Name = "label3";
             label3.Size = new Size(34, 37);
             label3.TabIndex = 2;
@@ -116,7 +118,7 @@
             label4.BackColor = Color.Transparent;
             label4.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label4.ForeColor = Color.MediumSlateBlue;
-            label4.Location = new Point(86, 115);
+            label4.Location = new Point(109, 111);
             label4.Name = "label4";
             label4.Size = new Size(161, 30);
             label4.TabIndex = 28;
@@ -160,7 +162,7 @@
             dataGridViewCellStyle3.WrapMode = DataGridViewTriState.True;
             CGV.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             CGV.RowHeadersVisible = false;
-            CGV.Size = new Size(371, 221);
+            CGV.Size = new Size(392, 210);
             CGV.TabIndex = 29;
             CGV.CellContentClick += CGV_CellContentClick;
             // 
@@ -186,23 +188,23 @@
             CID.Size = new Size(248, 29);
             CID.TabIndex = 31;
             // 
-            // dateTimePicker1
+            // Odate
             // 
-            dateTimePicker1.CalendarForeColor = SystemColors.WindowFrame;
-            dateTimePicker1.CalendarMonthBackground = Color.White;
-            dateTimePicker1.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            dateTimePicker1.Location = new Point(10, 560);
-            dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(248, 25);
-            dateTimePicker1.TabIndex = 32;
+            Odate.CalendarForeColor = SystemColors.WindowFrame;
+            Odate.CalendarMonthBackground = Color.White;
+            Odate.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            Odate.Location = new Point(10, 540);
+            Odate.Name = "Odate";
+            Odate.Size = new Size(248, 25);
+            Odate.TabIndex = 32;
             // 
             // panel2
             // 
             panel2.BackColor = Color.MediumSlateBlue;
             panel2.Dock = DockStyle.Bottom;
-            panel2.Location = new Point(0, 645);
+            panel2.Location = new Point(0, 648);
             panel2.Name = "panel2";
-            panel2.Size = new Size(902, 20);
+            panel2.Size = new Size(961, 17);
             panel2.TabIndex = 33;
             // 
             // label5
@@ -211,7 +213,7 @@
             label5.BackColor = Color.Transparent;
             label5.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label5.ForeColor = Color.MediumSlateBlue;
-            label5.Location = new Point(10, 521);
+            label5.Location = new Point(10, 514);
             label5.Name = "label5";
             label5.Size = new Size(127, 25);
             label5.TabIndex = 34;
@@ -223,7 +225,7 @@
             searchCombo.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             searchCombo.ForeColor = SystemColors.WindowFrame;
             searchCombo.FormattingEnabled = true;
-            searchCombo.Location = new Point(546, 112);
+            searchCombo.Location = new Point(549, 112);
             searchCombo.Name = "searchCombo";
             searchCombo.Size = new Size(248, 29);
             searchCombo.TabIndex = 35;
@@ -256,7 +258,7 @@
             PGV.DefaultCellStyle = dataGridViewCellStyle5;
             PGV.EnableHeadersVisualStyles = false;
             PGV.GridColor = Color.Gainsboro;
-            PGV.Location = new Point(390, 145);
+            PGV.Location = new Point(411, 143);
             PGV.Name = "PGV";
             PGV.RowHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle6.Alignment = DataGridViewContentAlignment.MiddleLeft;
@@ -268,7 +270,7 @@
             dataGridViewCellStyle6.WrapMode = DataGridViewTriState.True;
             PGV.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
             PGV.RowHeadersVisible = false;
-            PGV.Size = new Size(492, 221);
+            PGV.Size = new Size(538, 212);
             PGV.TabIndex = 36;
             PGV.CellContentClick += PGV_CellContentClick;
             // 
@@ -278,7 +280,7 @@
             label6.BackColor = Color.Transparent;
             label6.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label6.ForeColor = Color.MediumSlateBlue;
-            label6.Location = new Point(349, 372);
+            label6.Location = new Point(385, 367);
             label6.Name = "label6";
             label6.Size = new Size(74, 25);
             label6.TabIndex = 37;
@@ -289,7 +291,7 @@
             qtyTb.BorderStyle = BorderStyle.FixedSingle;
             qtyTb.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             qtyTb.ForeColor = Color.MediumSlateBlue;
-            qtyTb.Location = new Point(429, 370);
+            qtyTb.Location = new Point(463, 365);
             qtyTb.Name = "qtyTb";
             qtyTb.PlaceholderText = " ";
             qtyTb.Size = new Size(192, 29);
@@ -302,11 +304,11 @@
             button5.FlatStyle = FlatStyle.Flat;
             button5.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button5.ForeColor = Color.White;
-            button5.Location = new Point(627, 371);
+            button5.Location = new Point(657, 365);
             button5.Name = "button5";
             button5.Size = new Size(255, 29);
             button5.TabIndex = 39;
-            button5.Text = "Zur Bestellung hinzufügen";
+            button5.Text = "Zur Bestellungen hinzufügen";
             button5.UseVisualStyleBackColor = false;
             button5.Click += button5_Click;
             // 
@@ -336,7 +338,7 @@
             OGV.DefaultCellStyle = dataGridViewCellStyle8;
             OGV.EnableHeadersVisualStyles = false;
             OGV.GridColor = Color.Gainsboro;
-            OGV.Location = new Point(322, 400);
+            OGV.Location = new Point(343, 401);
             OGV.Name = "OGV";
             OGV.RowHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle9.Alignment = DataGridViewContentAlignment.MiddleLeft;
@@ -348,23 +350,23 @@
             dataGridViewCellStyle9.WrapMode = DataGridViewTriState.True;
             OGV.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
             OGV.RowHeadersVisible = false;
-            OGV.Size = new Size(560, 212);
+            OGV.Size = new Size(606, 212);
             OGV.TabIndex = 40;
             // 
             // Product
             // 
             Product.Name = "Product";
             // 
-            // textBox1
+            // Kname
             // 
-            textBox1.BorderStyle = BorderStyle.FixedSingle;
-            textBox1.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            textBox1.ForeColor = Color.MediumSlateBlue;
-            textBox1.Location = new Point(10, 476);
-            textBox1.Name = "textBox1";
-            textBox1.PlaceholderText = " Kunden Name";
-            textBox1.Size = new Size(248, 29);
-            textBox1.TabIndex = 41;
+            Kname.BorderStyle = BorderStyle.FixedSingle;
+            Kname.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            Kname.ForeColor = Color.MediumSlateBlue;
+            Kname.Location = new Point(10, 476);
+            Kname.Name = "Kname";
+            Kname.PlaceholderText = " Kunden Name";
+            Kname.Size = new Size(248, 29);
+            Kname.TabIndex = 41;
             // 
             // labl
             // 
@@ -372,11 +374,11 @@
             labl.BackColor = Color.Transparent;
             labl.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             labl.ForeColor = Color.MediumSlateBlue;
-            labl.Location = new Point(511, 615);
+            labl.Location = new Point(576, 617);
             labl.Name = "labl";
-            labl.Size = new Size(139, 25);
+            labl.Size = new Size(137, 25);
             labl.TabIndex = 42;
-            labl.Text = "Gesamtmenge";
+            labl.Text = "Gesamtbetrag";
             // 
             // TotAmount
             // 
@@ -384,21 +386,53 @@
             TotAmount.BackColor = Color.Transparent;
             TotAmount.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             TotAmount.ForeColor = Color.Black;
-            TotAmount.Location = new Point(668, 615);
+            TotAmount.Location = new Point(716, 617);
             TotAmount.Name = "TotAmount";
             TotAmount.Size = new Size(35, 25);
             TotAmount.TabIndex = 43;
             TotAmount.Text = "RS";
+            // 
+            // button1
+            // 
+            button1.BackColor = Color.MediumSlateBlue;
+            button1.FlatAppearance.BorderSize = 0;
+            button1.FlatStyle = FlatStyle.Flat;
+            button1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button1.ForeColor = Color.White;
+            button1.Location = new Point(10, 592);
+            button1.Name = "button1";
+            button1.Size = new Size(149, 50);
+            button1.TabIndex = 44;
+            button1.Text = "Zur Bestellungen einfügen";
+            button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
+            // 
+            // button2
+            // 
+            button2.BackColor = Color.MediumSlateBlue;
+            button2.FlatAppearance.BorderSize = 0;
+            button2.FlatStyle = FlatStyle.Flat;
+            button2.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button2.ForeColor = Color.White;
+            button2.Location = new Point(170, 591);
+            button2.Name = "button2";
+            button2.Size = new Size(143, 51);
+            button2.TabIndex = 45;
+            button2.Text = "Bestellungen ansehen";
+            button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
             // 
             // ManageOrders
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Lavender;
-            ClientSize = new Size(902, 665);
+            ClientSize = new Size(961, 665);
+            Controls.Add(button2);
+            Controls.Add(button1);
             Controls.Add(TotAmount);
             Controls.Add(labl);
-            Controls.Add(textBox1);
+            Controls.Add(Kname);
             Controls.Add(OGV);
             Controls.Add(button5);
             Controls.Add(qtyTb);
@@ -407,7 +441,7 @@
             Controls.Add(searchCombo);
             Controls.Add(label5);
             Controls.Add(panel2);
-            Controls.Add(dateTimePicker1);
+            Controls.Add(Odate);
             Controls.Add(CID);
             Controls.Add(OID);
             Controls.Add(CGV);
@@ -436,7 +470,7 @@
         private DataGridView CGV;
         private TextBox OID;
         private TextBox CID;
-        private DateTimePicker dateTimePicker1;
+        private DateTimePicker Odate;
         private Panel panel2;
         private Label label5;
         private ComboBox searchCombo;
@@ -451,8 +485,10 @@
         private DataGridViewTextBoxColumn Price;
         private DataGridViewTextBoxColumn TotPrice;
         private DataGridViewTextBoxColumn pqty;
-        private TextBox textBox1;
+        private TextBox Kname;
         private Label labl;
         private Label TotAmount;
+        private Button button1;
+        private Button button2;
     }
 }

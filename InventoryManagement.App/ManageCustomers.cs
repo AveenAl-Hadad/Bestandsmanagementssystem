@@ -117,6 +117,23 @@ public partial class ManageCustomers : Form
             Cphone.Text = row.Cells[2].Value.ToString();
 
         }
+        con.Open();
+        SqlDataAdapter sda = new SqlDataAdapter("Select Count(*) from BestellungenTbl where Kunden_Id = " + CustomerID.Text + "", con);
+        DataTable dt = new DataTable();
+        sda.Fill(dt);
+        OrdersLab.Text = dt.Rows[0][0].ToString();
+
+        SqlDataAdapter sda1 = new SqlDataAdapter("Select Sum(Gesamtbetrag) from BestellungenTbl where Kunden_Id = " + CustomerID.Text + "", con);
+        DataTable dt1 = new DataTable();
+        sda1.Fill(dt1);
+        AmountLab.Text = dt1.Rows[0][0].ToString();
+
+        SqlDataAdapter sda2 = new SqlDataAdapter("Select Max(Bestelldatum) from BestellungenTbl where Kunden_Id = " + CustomerID.Text + "", con);
+        DataTable dt2 = new DataTable();
+        sda2.Fill(dt2);
+        DateLab.Text = dt2.Rows[0][0].ToString();
+
+        con.Close();
     }
 
   
