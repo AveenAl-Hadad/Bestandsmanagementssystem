@@ -76,7 +76,7 @@ namespace InventoryManagement.App
             e.Graphics.DrawString("Kunden Name:" + Cname, new Font("Century", 20, FontStyle.Regular), Brushes.Black, new Point(80, 160));
             e.Graphics.DrawString("Bestelldatum:" + orderDate.ToShortDateString(), new Font("Century", 20, FontStyle.Regular), Brushes.Black, new Point(80, 190));
             e.Graphics.DrawString("Gesamtbetrag:" + TotAmount, new Font("Century", 20, FontStyle.Regular), Brushes.Black, new Point(80, 230));
-
+            e.Graphics.DrawString("Unterstützt von Codespace:", new Font("Century", 20, FontStyle.Bold), Brushes.Red, new Point(80, 260));
         }
     }
 }

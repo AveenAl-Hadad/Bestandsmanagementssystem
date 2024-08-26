@@ -60,6 +60,7 @@
             TotAmount = new Label();
             button1 = new Button();
             button2 = new Button();
+            button4 = new Button();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)CGV).BeginInit();
             ((System.ComponentModel.ISupportInitialize)PGV).BeginInit();
@@ -171,7 +172,7 @@
             OID.BorderStyle = BorderStyle.FixedSingle;
             OID.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             OID.ForeColor = Color.MediumSlateBlue;
-            OID.Location = new Point(10, 406);
+            OID.Location = new Point(10, 368);
             OID.Name = "OID";
             OID.PlaceholderText = " Bestellung ID";
             OID.Size = new Size(248, 29);
@@ -182,7 +183,7 @@
             CID.BorderStyle = BorderStyle.FixedSingle;
             CID.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             CID.ForeColor = Color.MediumSlateBlue;
-            CID.Location = new Point(10, 441);
+            CID.Location = new Point(10, 403);
             CID.Name = "CID";
             CID.PlaceholderText = " Kunden ID";
             CID.Size = new Size(248, 29);
@@ -193,7 +194,7 @@
             Odate.CalendarForeColor = SystemColors.WindowFrame;
             Odate.CalendarMonthBackground = Color.White;
             Odate.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            Odate.Location = new Point(10, 540);
+            Odate.Location = new Point(10, 502);
             Odate.Name = "Odate";
             Odate.Size = new Size(248, 25);
             Odate.TabIndex = 32;
@@ -202,9 +203,9 @@
             // 
             panel2.BackColor = Color.MediumSlateBlue;
             panel2.Dock = DockStyle.Bottom;
-            panel2.Location = new Point(0, 648);
+            panel2.Location = new Point(0, 650);
             panel2.Name = "panel2";
-            panel2.Size = new Size(961, 17);
+            panel2.Size = new Size(961, 15);
             panel2.TabIndex = 33;
             // 
             // label5
@@ -213,7 +214,7 @@
             label5.BackColor = Color.Transparent;
             label5.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label5.ForeColor = Color.MediumSlateBlue;
-            label5.Location = new Point(10, 514);
+            label5.Location = new Point(10, 476);
             label5.Name = "label5";
             label5.Size = new Size(127, 25);
             label5.TabIndex = 34;
@@ -362,7 +363,7 @@
             Kname.BorderStyle = BorderStyle.FixedSingle;
             Kname.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             Kname.ForeColor = Color.MediumSlateBlue;
-            Kname.Location = new Point(10, 476);
+            Kname.Location = new Point(10, 438);
             Kname.Name = "Kname";
             Kname.PlaceholderText = " Kunden Name";
             Kname.Size = new Size(248, 29);
@@ -399,7 +400,7 @@
             button1.FlatStyle = FlatStyle.Flat;
             button1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button1.ForeColor = Color.White;
-            button1.Location = new Point(10, 592);
+            button1.Location = new Point(10, 542);
             button1.Name = "button1";
             button1.Size = new Size(149, 50);
             button1.TabIndex = 44;
@@ -414,7 +415,7 @@
             button2.FlatStyle = FlatStyle.Flat;
             button2.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button2.ForeColor = Color.White;
-            button2.Location = new Point(170, 591);
+            button2.Location = new Point(170, 541);
             button2.Name = "button2";
             button2.Size = new Size(143, 51);
             button2.TabIndex = 45;
@@ -422,12 +423,28 @@
             button2.UseVisualStyleBackColor = false;
             button2.Click += button2_Click;
             // 
+            // button4
+            // 
+            button4.BackColor = Color.MediumSlateBlue;
+            button4.FlatAppearance.BorderSize = 0;
+            button4.FlatStyle = FlatStyle.Flat;
+            button4.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button4.ForeColor = Color.White;
+            button4.Location = new Point(109, 603);
+            button4.Name = "button4";
+            button4.Size = new Size(102, 39);
+            button4.TabIndex = 46;
+            button4.Text = "Startseite";
+            button4.UseVisualStyleBackColor = false;
+            button4.Click += button4_Click;
+            // 
             // ManageOrders
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Lavender;
             ClientSize = new Size(961, 665);
+            Controls.Add(button4);
             Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(TotAmount);
@@ -490,5 +507,6 @@
         private Label TotAmount;
         private Button button1;
         private Button button2;
+        private Button button4;
     }
 }

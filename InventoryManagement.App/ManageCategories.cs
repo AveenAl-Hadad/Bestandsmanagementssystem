@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+
 namespace InventoryManagement.App
 {
     public partial class ManageCategories : Form
@@ -18,7 +19,9 @@ namespace InventoryManagement.App
         }
         SqlConnection con = new SqlConnection(@"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=InventoryDB;Integrated Security=True;Connect Timeout=30");
 
-        // die Kategorien Tabelle Daten vomm Datenbank aufrufen GET
+        /// <summary>
+        /// Get Data vom DB Categorie
+        /// </summary>
         void populate()
         {
             try
@@ -38,7 +41,11 @@ namespace InventoryManagement.App
                 MessageBox.Show("Fehler beim Laden der Daten: " + ex.Message);
             }
         }
-        // Speichen
+       /// <summary>
+       /// Add
+       /// </summary>
+       /// <param name="sender"></param>
+       /// <param name="e"></param>
         private void button1_Click(object sender, EventArgs e)
         {
             try
@@ -55,7 +62,11 @@ namespace InventoryManagement.App
                 MessageBox.Show("Fehler beim Hinzufügen der Kategorie: " + ex.Message);
             }
         }
-        // Get
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void CategoriesGV_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             if (e.RowIndex >= 0)
@@ -113,6 +124,13 @@ namespace InventoryManagement.App
         private void ManageCategories_Load(object sender, EventArgs e)
         {
             populate();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            HomeForm home = new HomeForm();
+            home.Show();
+            this.Hide();
         }
     }
 }

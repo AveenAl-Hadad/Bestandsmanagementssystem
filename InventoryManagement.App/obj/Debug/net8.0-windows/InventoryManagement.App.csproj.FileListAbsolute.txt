@@ -74,3 +74,5 @@ C:\Users\aveen alhadad\source\repos\InventoryManagement.App\InventoryManagement.
 C:\Users\aveen alhadad\source\repos\InventoryManagement.App\InventoryManagement.App\obj\Debug\net8.0-windows\InventoryManagement.App.ManageProducts.resources
 C:\Users\aveen alhadad\source\repos\InventoryManagement.App\InventoryManagement.App\obj\Debug\net8.0-windows\InventoryManagement.App.ManageOrders.resources
 C:\Users\aveen alhadad\source\repos\InventoryManagement.App\InventoryManagement.App\obj\Debug\net8.0-windows\InventoryManagement.App.ViewOrders.resources
+C:\Users\aveen alhadad\source\repos\InventoryManagement.App\InventoryManagement.App\obj\Debug\net8.0-windows\InventoryManagement.App.HomeForm.resources
+C:\Users\aveen alhadad\source\repos\InventoryManagement.App\InventoryManagement.App\obj\Debug\net8.0-windows\InventoryManagement.App.SplashForm.resources

@@ -64,7 +64,7 @@
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(902, 122);
+            panel1.Size = new Size(902, 100);
             panel1.TabIndex = 2;
             // 
             // label3
@@ -105,9 +105,9 @@
             // 
             panel2.BackColor = Color.MediumSlateBlue;
             panel2.Dock = DockStyle.Bottom;
-            panel2.Location = new Point(0, 661);
+            panel2.Location = new Point(0, 666);
             panel2.Name = "panel2";
-            panel2.Size = new Size(902, 20);
+            panel2.Size = new Size(902, 15);
             panel2.TabIndex = 19;
             // 
             // PGV
@@ -136,7 +136,7 @@
             PGV.DefaultCellStyle = dataGridViewCellStyle2;
             PGV.EnableHeadersVisualStyles = false;
             PGV.GridColor = Color.Gainsboro;
-            PGV.Location = new Point(323, 211);
+            PGV.Location = new Point(333, 211);
             PGV.Name = "PGV";
             PGV.RowHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
@@ -176,6 +176,7 @@
             button4.TabIndex = 26;
             button4.Text = "Startseite";
             button4.UseVisualStyleBackColor = false;
+            button4.Click += button4_Click;
             // 
             // button3
             // 

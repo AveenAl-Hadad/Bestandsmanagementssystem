@@ -37,6 +37,7 @@
             UnameTb = new TextBox();
             LoginLB = new Label();
             label2 = new Label();
+            label3 = new Label();
             Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox).BeginInit();
             SuspendLayout();
@@ -105,6 +106,7 @@
             LoginBtn.TabIndex = 3;
             LoginBtn.Text = "ANMELDEN";
             LoginBtn.UseVisualStyleBackColor = false;
+            LoginBtn.Click += LoginBtn_Click;
             // 
             // PasswordTb
             // 
@@ -153,6 +155,19 @@
             label2.TabIndex = 1;
             label2.Text = "BESTANDSMANAGEMENTSSYSTEM";
             // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.BackColor = Color.Transparent;
+            label3.Font = new Font("Segoe UI Semibold", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label3.ForeColor = Color.White;
+            label3.Location = new Point(677, 9);
+            label3.Name = "label3";
+            label3.Size = new Size(34, 37);
+            label3.TabIndex = 3;
+            label3.Text = "X";
+            label3.Click += label3_Click_1;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -160,13 +175,13 @@
             BackgroundImage = Properties.Resources.pexels_tima_miroshnichenko_7567443;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(723, 599);
+            Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(Panel1);
             FormBorderStyle = FormBorderStyle.None;
             Name = "Form1";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";
-            Load += Form1_Load;
             Panel1.ResumeLayout(false);
             Panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox).EndInit();
@@ -185,5 +200,6 @@
         private PictureBox pictureBox;
         private TextBox PasswordTb;
         private Label ClearLb;
+        private Label label3;
     }
 }

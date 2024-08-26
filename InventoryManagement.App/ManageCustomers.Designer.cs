@@ -70,7 +70,7 @@
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(902, 122);
+            panel1.Size = new Size(902, 100);
             panel1.TabIndex = 1;
             // 
             // label3
@@ -145,7 +145,7 @@
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI Semibold", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label4.ForeColor = Color.Crimson;
-            label4.Location = new Point(503, 125);
+            label4.Location = new Point(503, 110);
             label4.Name = "label4";
             label4.Size = new Size(200, 37);
             label4.TabIndex = 12;
@@ -177,7 +177,7 @@
             CustomersGV.DefaultCellStyle = dataGridViewCellStyle2;
             CustomersGV.EnableHeadersVisualStyles = false;
             CustomersGV.GridColor = Color.Gainsboro;
-            CustomersGV.Location = new Point(394, 164);
+            CustomersGV.Location = new Point(394, 150);
             CustomersGV.Name = "CustomersGV";
             CustomersGV.RowHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
@@ -251,14 +251,15 @@
             button4.TabIndex = 17;
             button4.Text = "Startseite";
             button4.UseVisualStyleBackColor = false;
+            button4.Click += button4_Click;
             // 
             // panel2
             // 
             panel2.BackColor = Color.MediumSlateBlue;
             panel2.Dock = DockStyle.Bottom;
-            panel2.Location = new Point(0, 661);
+            panel2.Location = new Point(0, 666);
             panel2.Name = "panel2";
-            panel2.Size = new Size(902, 20);
+            panel2.Size = new Size(902, 15);
             panel2.TabIndex = 18;
             // 
             // panel3

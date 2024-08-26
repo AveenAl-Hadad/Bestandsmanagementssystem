@@ -63,6 +63,26 @@ namespace InventoryManagement.App.Properties {
         /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _10897 {
+            get {
+                object obj = ResourceManager.GetObject("10897", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Inventur_scaled {
+            get {
+                object obj = ResourceManager.GetObject("Inventur-scaled", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap pexels_tima_miroshnichenko_7567443 {
             get {
                 object obj = ResourceManager.GetObject("pexels-tima-miroshnichenko-7567443", resourceCulture);

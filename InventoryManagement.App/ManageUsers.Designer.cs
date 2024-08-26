@@ -29,9 +29,9 @@ namespace InventoryManagement.App
         /// </summary>
         private void InitializeComponent()
         {
-            DataGridViewCellStyle dataGridViewCellStyle7 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle8 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle9 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
             panel1 = new Panel();
             label3 = new Label();
             label2 = new Label();
@@ -60,7 +60,7 @@ namespace InventoryManagement.App
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(902, 122);
+            panel1.Size = new Size(902, 100);
             panel1.TabIndex = 0;
             // 
             // label3
@@ -210,36 +210,36 @@ namespace InventoryManagement.App
             UsersGv.BorderStyle = BorderStyle.None;
             UsersGv.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
             UsersGv.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle7.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle7.BackColor = Color.Crimson;
-            dataGridViewCellStyle7.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            dataGridViewCellStyle7.ForeColor = Color.White;
-            dataGridViewCellStyle7.SelectionBackColor = Color.White;
-            dataGridViewCellStyle7.SelectionForeColor = Color.Black;
-            dataGridViewCellStyle7.WrapMode = DataGridViewTriState.True;
-            UsersGv.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = Color.Crimson;
+            dataGridViewCellStyle1.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle1.ForeColor = Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = Color.White;
+            dataGridViewCellStyle1.SelectionForeColor = Color.Black;
+            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
+            UsersGv.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             UsersGv.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle8.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = Color.White;
-            dataGridViewCellStyle8.Font = new Font("Segoe UI", 9F);
-            dataGridViewCellStyle8.ForeColor = Color.Black;
-            dataGridViewCellStyle8.SelectionBackColor = Color.White;
-            dataGridViewCellStyle8.SelectionForeColor = Color.FromArgb(0, 0, 64);
-            dataGridViewCellStyle8.WrapMode = DataGridViewTriState.False;
-            UsersGv.DefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = Color.White;
+            dataGridViewCellStyle2.Font = new Font("Segoe UI", 9F);
+            dataGridViewCellStyle2.ForeColor = Color.Black;
+            dataGridViewCellStyle2.SelectionBackColor = Color.White;
+            dataGridViewCellStyle2.SelectionForeColor = Color.FromArgb(0, 0, 64);
+            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.False;
+            UsersGv.DefaultCellStyle = dataGridViewCellStyle2;
             UsersGv.EnableHeadersVisualStyles = false;
             UsersGv.GridColor = Color.Gainsboro;
             UsersGv.Location = new Point(371, 198);
             UsersGv.Name = "UsersGv";
             UsersGv.RowHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle9.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = SystemColors.Control;
-            dataGridViewCellStyle9.Font = new Font("Segoe UI", 9F);
-            dataGridViewCellStyle9.ForeColor = Color.Black;
-            dataGridViewCellStyle9.SelectionBackColor = Color.White;
-            dataGridViewCellStyle9.SelectionForeColor = Color.FromArgb(0, 0, 64);
-            dataGridViewCellStyle9.WrapMode = DataGridViewTriState.True;
-            UsersGv.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = SystemColors.Control;
+            dataGridViewCellStyle3.Font = new Font("Segoe UI", 9F);
+            dataGridViewCellStyle3.ForeColor = Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = Color.White;
+            dataGridViewCellStyle3.SelectionForeColor = Color.FromArgb(0, 0, 64);
+            dataGridViewCellStyle3.WrapMode = DataGridViewTriState.True;
+            UsersGv.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             UsersGv.RowHeadersVisible = false;
             UsersGv.Size = new Size(489, 422);
             UsersGv.TabIndex = 9;
@@ -249,9 +249,9 @@ namespace InventoryManagement.App
             // 
             panel2.BackColor = Color.MediumSlateBlue;
             panel2.Dock = DockStyle.Bottom;
-            panel2.Location = new Point(0, 636);
+            panel2.Location = new Point(0, 641);
             panel2.Name = "panel2";
-            panel2.Size = new Size(902, 20);
+            panel2.Size = new Size(902, 15);
             panel2.TabIndex = 10;
             // 
             // label4
